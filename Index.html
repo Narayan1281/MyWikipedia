@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>My Wikipedia | SEARCH BAR 2021</title>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <link rel="stylesheet" href="animate.css" type="text/css" />
+        
+    </head>
+
+    <body>
+        <!-- main container -->
+        <div class="container"> 
+            <!-- logo placement -->
+            <div class="logo-section">
+				<img class="logo" src="Wikipedia-logo-v2.svg.png" alt="Logo" width="600"  >
+			    <!-- </a> -->
+            </div>
+            <!-- search box -->
+            <form id="wikiSearch" class="wikiSearch">
+                <input id="searchBar" type="text" autocomplete="off" name="search" placeholder="search wikipedia..." />
+                <span class="inputUnderline"></span>
+                <button id="submitBtn" type="submit">SUBMIT</button>
+            </form>
+            <!-- when no result found -->
+            <div>
+                <ul id="searchResults">
+                    <div id="noResults" class="animated" style="display:none;">
+                        <h2>no results found!</h2>
+                    </div>
+                </ul>
+            </div>
+           
+        </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+
+</html>
